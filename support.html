@@ -1,93 +1,291 @@
 <!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hỗ trợ khách hàng - Fin</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* CSS riêng cho form liên hệ */
-        .form-group { margin-bottom: 15px; }
-        .form-group label { display: block; margin-bottom: 5px; font-weight: bold;}
-        .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
-        .btn-submit { background-color: var(--primary-color); color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold;}
-    </style>
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo"><img src="images/logo.png" alt="Fin">
-                <span>Fin</span></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="guide.html">Hướng dẫn</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="container">
-        <h1>Trung Tâm Hỗ Trợ Ứng Dụng Fin - Quản lý chi tiêu cá nhân</h1>
-        <p>Nếu bạn gặp lỗi trong quá trình sử dụng, mất dữ liệu, hoặc muốn đóng góp ý kiến nâng cấp tính năng, vui lòng liên hệ với chúng tôi qua thông tin bên dưới:</p>
-        
-        <h2>Thông tin liên hệ trực tiếp</h2>
-        <p>📧 Email: <b>trinhtrung.tdt@gmail.com</b> </p>
-        <p>☎ Phone: 0868 214 215</p>
-        <h2>Gửi yêu cầu hỗ trợ nhanh</h2>
-<form style="margin-top:20px;" id="supportForm">
-    <div class="form-group">
-        <label>Họ và tên của bạn:</label>
-        <input type="text" id="senderName" required placeholder="Nguyễn Văn A">
+<html lang="vi">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Hỗ trợ - Fin Apps</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+```
+<nav class="navbar">
+
+    <a href="index.html" class="brand">
+
+        <div class="brand-icon">F</div>
+
+        <span>Fin Apps</span>
+
+    </a>
+
+
+    <div class="nav-links">
+
+        <a href="index.html">
+            Ứng dụng
+        </a>
+
+        <a href="support.html" class="active">
+            Hỗ trợ
+        </a>
+
     </div>
-    <div class="form-group">
-        <label>Email liên hệ:</label>
-        <input type="email" id="senderEmail" required placeholder="name@example.com">
-    </div>
-    <div class="form-group">
-        <label>Vấn đề bạn gặp phải:</label>
-        <textarea rows="5" id="senderMessage" required placeholder="Mô tả chi tiết lỗi hoặc góp ý của bạn..."></textarea>
-    </div>
-    <button type="submit" class="btn-submit" id="submitBtn">Gửi Phản Hồi</button>
-</form>
+
+</nav>
+```
+
+</header>
+
+<main>
+
+<section class="detail-section">
+
+```
+<span class="section-label">
+    SUPPORT
+</span>
+
+
+<h1>
+    Trung tâm hỗ trợ
+</h1>
+
+
+<p>
+    Nếu bạn gặp lỗi trong quá trình sử dụng ứng dụng,
+    cần hỗ trợ hoặc muốn đóng góp ý kiến, hãy gửi
+    thông tin cho chúng tôi.
+</p>
+
+
+<div class="support-card">
+
+
+    <h2>
+        Liên hệ trực tiếp
+    </h2>
+
+
+    <p>
+        📧 Email:
+        <strong>
+            trinhtrung.tdt@gmail.com
+        </strong>
+    </p>
+
+
+    <p>
+        ☎ Điện thoại:
+        <strong>
+            0868 214 215
+        </strong>
+    </p>
+
+
+</div>
+
+
+<div class="support-card">
+
+
+    <h2>
+        Gửi yêu cầu hỗ trợ
+    </h2>
+
+
+    <form id="supportForm">
+
+
+        <div class="form-group">
+
+            <label>
+                Họ và tên
+            </label>
+
+            <input
+                type="text"
+                id="senderName"
+                required
+                placeholder="Nguyễn Văn A"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="senderEmail"
+                required
+                placeholder="name@example.com"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Nội dung
+            </label>
+
+            <textarea
+                id="senderMessage"
+                rows="6"
+                required
+                placeholder="Mô tả vấn đề hoặc góp ý của bạn..."
+            ></textarea>
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="primary-button"
+            id="submitBtn"
+        >
+            Gửi phản hồi
+        </button>
+
+
+    </form>
+
+
+</div>
+```
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+```
+<div class="copyright">
+    © 2026 Fin Apps. Bảo lưu mọi quyền.
+</div>
+```
+
+</footer>
 
 <script>
-document.getElementById('supportForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Ngăn trang web bị tải lại
-    
-    // ĐƯỜNG LINK URL ỨNG DỤNG WEB BẠN COPY Ở BƯỚC 2 (Thay link của bạn vào đây)
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz5h7XDaJ8tvKTunbutPmjsLrK5jqZ2daQf5EgmZeHjRaphLWnNBT6Ak16VMvL52W97/exec';
-    
-    const submitBtn = document.getElementById('submitBtn');
-    submitBtn.innerText = 'Đang gửi...';
-    submitBtn.disabled = true;
 
-    const data = {
-        name: document.getElementById('senderName').value,
-        email: document.getElementById('senderEmail').value,
-        message: document.getElementById('senderMessage').value
-    };
+document
+    .getElementById("supportForm")
+    .addEventListener("submit", function(e) {
 
-    fetch(scriptURL, {
-        method: 'POST',
-        mode: 'no-cors', // Cần thiết để bypass lỗi CORS khi dùng với Google Script tĩnh
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data)
-    })
-    .then(() => {
-        alert('Cảm ơn bạn đã gửi phản hồi! Chúng tôi đã ghi nhận và sẽ liên hệ lại trong vòng 24h.');
-        document.getElementById('supportForm').reset(); // Xóa sạch dữ liệu trên form sau khi gửi thành công
-        submitBtn.innerText = 'Gửi Phản Hồi';
-        submitBtn.disabled = false;
-    })
-    .catch(error => {
-        alert('Có lỗi xảy ra trong quá trình gửi. Vui lòng thử lại sau hoặc liên hệ qua Email trực tiếp.');
-        console.error('Error!', error.message);
-        submitBtn.innerText = 'Gửi Phản Hồi';
-        submitBtn.disabled = false;
+        e.preventDefault();
+
+
+        const scriptURL =
+            "https://script.google.com/macros/s/AKfycbz5h7XDaJ8tvKTunbutPmjsLrK5jqZ2daQf5EgmZeHjRaphLWnNBT6Ak16VMvL52W97/exec";
+
+
+        const submitBtn =
+            document.getElementById("submitBtn");
+
+
+        submitBtn.innerText =
+            "Đang gửi...";
+
+        submitBtn.disabled =
+            true;
+
+
+        const data = {
+
+            name:
+                document.getElementById("senderName").value,
+
+            email:
+                document.getElementById("senderEmail").value,
+
+            message:
+                document.getElementById("senderMessage").value
+
+        };
+
+
+        fetch(scriptURL, {
+
+            method: "POST",
+
+            mode: "no-cors",
+
+            headers: {
+                "Content-Type": "application/json"
+            },
+
+            body: JSON.stringify(data)
+
+        })
+
+        .then(() => {
+
+            alert(
+                "Cảm ơn bạn đã gửi phản hồi! " +
+                "Chúng tôi đã ghi nhận yêu cầu của bạn."
+            );
+
+
+            document
+                .getElementById("supportForm")
+                .reset();
+
+
+            submitBtn.innerText =
+                "Gửi phản hồi";
+
+            submitBtn.disabled =
+                false;
+
+        })
+
+
+        .catch(error => {
+
+            console.error(error);
+
+
+            alert(
+                "Có lỗi xảy ra. " +
+                "Vui lòng liên hệ qua email."
+            );
+
+
+            submitBtn.innerText =
+                "Gửi phản hồi";
+
+            submitBtn.disabled =
+                false;
+
+        });
+
     });
-});
+
 </script>
-    </div>
+
 </body>
+
 </html>
