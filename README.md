@@ -8,7 +8,7 @@
 
 \## Các trang có sẵn
 
-\- `index.html`: Trang chủ giới thiệu tính năng và tải app.
+\- `index.html`: Trang chủ giới thiệu app.
 
 \- `privacy.html`: Chính sách bảo mật (Privacy Policy).
 
